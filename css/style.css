@@ -232,71 +232,71 @@ span {
 
 /* -----------------skills section-------------------- */
 .skills-container {
-  display: flex;
-  justify-content: center;
-  gap: 20rem;
-  flex-wrap: wrap;
-  padding: 2rem;
-  width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    width: 100%;
 }
 
 .skill-column {
-  flex: 1 1 45%;
-  max-width: 500px;
+    flex: 1 1 45%;
+    max-width: 500px;
 }
 
 .skill-category {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 24px;
-  font-weight: 600;
-  margin-top: 10px;
-  color: #00e0ff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #00e0ff;
 }
 
 .skill-divider {
-  width: 100%;
-  border: none;
-  height: 1px;
-  background: #4f5151;
-  margin: 8px 0 20px;
-  border-radius: 1px;
+    width: 100%;
+    border: none;
+    height: 1px;
+    background: #4f5151;
+    margin: 8px 0 20px;
+    border-radius: 1px;
 }
 
 .badge-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
 }
 
 .badge-group img {
-  height: 30px;
-  transition: transform 0.2s ease-in-out;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
 }
 
 .badge-group img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .icon {
-  font-size: 20px;
-  color: #ccc;
+    font-size: 20px;
+    color: #ccc;
 }
 
 /* Mobile responsive */
 @media (max-width: 768px) {
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .skill-column {
-    width: 100%;
-    max-width: 90%;
-  }
+    .skill-column {
+        width: 100%;
+        max-width: 90%;
+    }
 }
 
 /* -----------------skills section-------------------- */
@@ -382,57 +382,51 @@ span {
     font-size: 2rem;
     color: var(--bg-color);
 }
+
 .project-box:nth-child(even) {
-  margin-top: -60px; /* or any value that gives the offset you want */
+    margin-top: -60px;
+    /* or any value that gives the offset you want */
 }
 
 .project-box:nth-child(odd) {
-  margin-top: 20px; /* or any value that gives the offset you want */
+    margin-top: 20px;
+    /* or any value that gives the offset you want */
 }
 
 /* -----------------project section-------------------- */
 
 /* -----------------contact section-------------------- */
 
-.contact h2 {
-    margin-bottom: 3rem;
+.contact {
+    padding: 10rem 9%;
+    /*background-color: var(--second-bg-color); /* optional: set a section bg */
 }
 
-.contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
+.contact-wrapper {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    /* ensure left and right stay side by side */
+    gap: 2rem;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
+.contact-text {
+    flex: 1;
+}
+
+.contact-text h2 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-text p {
+    font-size: 2rem;
+    font-weight: 400;
     color: var(--text-color);
-    background-color: var(--second-bg-color);
-    border-radius: 0.8rem;
-    margin: 0.7rem 0;
-}
-
-.contact form .input-box input {
-    width: 49%;
-}
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
 }
 
 /* -----------------contact section-------------------- */
@@ -562,6 +556,11 @@ span {
     .project-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 617px) {
@@ -606,59 +605,60 @@ span {
 /***************************project page************************************/
 
 .project {
-  padding: 50px 10%;
+    padding: 50px 10%;
 }
 
 .project-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 60px;
-  gap: 40px;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .project-row.reverse {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .project-img img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .project-desc {
-  flex: 1;
-  max-width: 500px;
+    flex: 1;
+    max-width: 500px;
 }
 
 .project-desc h4 {
-  font-size: 24px;
-  margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .project-desc p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 12px;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
 }
 
 .project-desc a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: 500;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .project-desc a i {
-  margin-right: 5px;
+    margin-right: 5px;
 }
 
 @media (max-width: 768px) {
-  .project-row,
-  .project-row.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
+
+    .project-row,
+    .project-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
 }
