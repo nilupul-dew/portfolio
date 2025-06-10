@@ -552,6 +552,14 @@ span {
     .project h2 {
         margin-bottom: 3rem;
     }
+    .project-layer h4 {
+    font-size: 2.5rem;
+}
+
+.project-layer p {
+    font-size: 1.2rem;
+    margin: 2rem 0 0.75rem;
+}
 
     .project-container {
         grid-template-columns: repeat(2, 1fr);
@@ -594,6 +602,15 @@ span {
     .contact form .input-box input {
         width: 98%;
     }
+
+    .project-layer h4 {
+    font-size: 1.5rem;
+}
+
+.project-layer p {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem;
+}
 }
 
 @media (max-width: 365px) {
@@ -613,6 +630,14 @@ span {
         text-align: center;
         margin-top: 2rem;
     }
+    .project-layer h4 {
+    font-size: 1rem;
+}
+
+.project-layer p {
+    font-size: 0.5rem;
+    margin: 0.7rem 0 0.2rem;
+}
 }
 
 
