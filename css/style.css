@@ -383,15 +383,15 @@ span {
     color: var(--bg-color);
 }
 
-.project-box:nth-child(even) {
+/* .project-box:nth-child(even) {
     margin-top: -60px;
-    /* or any value that gives the offset you want */
+    /* or any value that gives the offset you want 
 }
 
 .project-box:nth-child(odd) {
     margin-top: 20px;
-    /* or any value that gives the offset you want */
-}
+    /* or any value that gives the offset you want 
+} */
 
 /* -----------------project section-------------------- */
 
@@ -557,9 +557,26 @@ span {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .contact-wrapper {
+        .contact-wrapper {
         flex-direction: column;
         text-align: center;
+    }
+
+    .contact-button {
+        margin-top: 2rem;
+    }
+
+    .contact-text h2 {
+        font-size: 3rem;
+    }
+
+    .contact-text p {
+        font-size: 1.6rem;
+    }
+
+    .contact-button .btn {
+        font-size: 1.5rem;
+        padding: 1rem 2.5rem;
     }
 }
 
